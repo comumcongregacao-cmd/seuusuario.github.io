@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Bíblica</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7fa;
+        }
+
+        header {
+            background: #b5c6c9;
+            color: #00363a;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            background: #c7dcdf;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #00363a;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        article {
+            background: #e5f1f5;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .titulo-objeto {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* ===== CONTAINER DAS BOXES ===== */
+        .biblia-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* ===== BOX ===== */
+        .biblia-box {
+            flex: 1;
+            background: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .biblia-box h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #00363a;
+        }
+
+        .biblia-box h4 {
+            margin: 15px 0 10px;
+            color: #00363a;
+        }
+
+        /* ===== LISTA EM DUAS COLUNAS ===== */
+        .lista-biblia {
+            list-style: none;
+            column-count: 2;
+            column-gap: 30px;
+        }
+
+        .lista-biblia li {
+            margin-bottom: 6px;
+            break-inside: avoid;
+        }
+
+        .lista-biblia a {
+            text-decoration: none;
+            color: #00363a;
+        }
+
+        .lista-biblia a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .biblia-container {
+                flex-direction: column;
+            }
+
+            .lista-biblia {
+                column-count: 1;
+            }
+        }
+
+        footer {
+            background: #b5c6c9;
+            color: #00363a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/SLOGAN.png" alt="Slogan do site" class="logo">
+
+    <nav class="menu">
+        <a href="./CCJ.html">Início</a>
+        <a href="./NOS.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2 class="titulo-objeto">Aqui vamos estudar</h2>
+
+        <div class="biblia-container">
+
+            <!-- ===== BÍBLIA ONLINE ===== -->
+            <div class="biblia-box">
+                <h3>Bíblia Online</h3>
+
+                <h4>Antigo Testamento</h4>
+                <ul class="lista-biblia">
+                    <li><a href="https://www.bibliaonline.com.br/acf/gn">Gênesis</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ex">Êxodo</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/lv">Levítico</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/nm">Números</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/dt">Deuteronômio</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/js">Josué</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/jz">Juízes</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/rt">Rute</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/1sm">1 Samuel</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2sm">2 Samuel</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/1rs">1 Reis</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2rs">2 Reis</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/1cr">1 Crônicas</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2cr">2 Crônicas</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/ed">Esdras</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ne">Neemias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/et">Ester</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/job">Jó</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/sl">Salmos</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/pv">Provérbios</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ec">Eclesiastes</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ct">Cânticos</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/is">Isaías</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/jr">Jeremias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/lm">Lamentações</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ez">Ezequiel</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/dn">Daniel</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/os">Oséias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/jl">Joel</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/am">Amós</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ob">Obadias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/jn">Jonas</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/mq">Miquéias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/na">Naum</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/hc">Habacuque</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/sf">Sofonias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ag">Ageu</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/zc">Zacarias</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ml">Malaquias</a></li>
+                </ul>
+
+                <h4>Novo Testamento</h4>
+                <ul class="lista-biblia">
+                    <li><a href="https://www.bibliaonline.com.br/acf/mt">Mateus</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/mc">Marcos</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/lc">Lucas</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/jo">João</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/atos">Atos</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/rm">Romanos</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/1co">1 Coríntios</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2co">2 Coríntios</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/gl">Gálatas</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/ef">Efésios</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/fp">Filipenses</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/cl">Colossenses</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/1ts">1 Tessalonicenses</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2ts">2 Tessalonicenses</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/1tm">1 Timóteo</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2tm">2 Timóteo</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/tt">Tito</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/fm">Filemom</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/hb">Hebreus</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/tg">Tiago</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/1pe">1 Pedro</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2pe">2 Pedro</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/1jo">1 João</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/2jo">2 João</a></li>
+<li><a href="https://www.bibliaonline.com.br/acf/3jo">3 João</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/jd">Judas</a></li>
+
+<li><a href="https://www.bibliaonline.com.br/acf/ap">Apocalipse</a></li>
+                </ul>
+            </div>
+
+            <!-- ===== WIKIPÉDIA ===== -->
+            <div class="biblia-box">
+                <h3>Wikipédia</h3>
+
+                <h4>Antigo Testamento</h4>
+                <ul class="lista-biblia">
+                    <li><a href="https://pt.wikipedia.org/wiki/G%C3%AAnesis" target="_blank">Gênesis</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/%C3%8Axodo" target="_blank">Êxodo</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Lev%C3%ADtico" target="_blank">Levítico</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/N%C3%BAmeros" target="_blank">Números</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Deuteron%C3%B4mio" target="_blank">Deuteronômio</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Josu%C3%A9_(livro_b%C3%ADblico)" target="_blank">Josué</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ju%C3%ADzes" target="_blank">Juízes</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Rute_(livro_b%C3%ADblico)" target="_blank">Rute</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Primeiro_Livro_de_Samuel" target="_blank">1 Samuel</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segundo_Livro_de_Samuel" target="_blank">2 Samuel</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Primeiro_Livro_dos_Reis" target="_blank">1 Reis</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segundo_Livro_dos_Reis" target="_blank">2 Reis</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Primeiro_Livro_das_Cr%C3%B4nicas" target="_blank">1 Crônicas</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segundo_Livro_das_Cr%C3%B4nicas" target="_blank">2 Crônicas</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Esdras" target="_blank">Esdras</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Neemias" target="_blank">Neemias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ester" target="_blank">Ester</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/J%C3%B3_(livro_b%C3%ADblico)" target="_blank">Jó</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Salmos" target="_blank">Salmos</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Prov%C3%A9rbios" target="_blank">Provérbios</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Eclesiastes" target="_blank">Eclesiastes</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Cantares_de_Salom%C3%A3o" target="_blank">Cânticos</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Isa%C3%ADas" target="_blank">Isaías</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Jeremias" target="_blank">Jeremias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Lamenta%C3%A7%C3%B5es" target="_blank">Lamentações</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ezequiel" target="_blank">Ezequiel</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Daniel_(livro_b%C3%ADblico)" target="_blank">Daniel</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Os%C3%A9ias" target="_blank">Oséias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Joel" target="_blank">Joel</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Am%C3%B3s_(livro_b%C3%ADblico)" target="_blank">Amós</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Obadias" target="_blank">Obadias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Jonas_(livro_b%C3%ADblico)" target="_blank">Jonas</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Miqu%C3%A9ias" target="_blank">Miquéias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Naum" target="_blank">Naum</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Habacuque" target="_blank">Habacuque</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Sofonias" target="_blank">Sofonias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ageu" target="_blank">Ageu</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Zacarias_(profeta)" target="_blank">Zacarias</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Malaquias" target="_blank">Malaquias</a></li>
+                </ul>
+
+                <h4>Novo Testamento</h4>
+                <ul class="lista-biblia">
+                    <li><a href="https://pt.wikipedia.org/wiki/Evangelho_de_Mateus" target="_blank">Mateus</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Evangelho_de_Marcos" target="_blank">Marcos</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Evangelho_de_Lucas" target="_blank">Lucas</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Evangelho_de_Jo%C3%A3o" target="_blank">João</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Atos_dos_Ap%C3%B3stolos" target="_blank">Atos</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_aos_Romanos" target="_blank">Romanos</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Primeira_Ep%C3%ADstola_aos_Cor%C3%ADntios" target="_blank">1 Coríntios</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segunda_Ep%C3%ADstola_aos_Cor%C3%ADntios" target="_blank">2 Coríntios</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_aos_G%C3%A1latas" target="_blank">Gálatas</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_aos_Ef%C3%A9sios" target="_blank">Efésios</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_aos_Filipenses" target="_blank">Filipenses</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_aos_Colossenses" target="_blank">Colossenses</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Primeira_Ep%C3%ADstola_aos_Tessalonicenses" target="_blank">1 Tessalonicenses</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segunda_Ep%C3%ADstola_aos_Tessalonicenses" target="_blank">2 Tessalonicenses</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Primeira_Ep%C3%ADstola_a_Tim%C3%B3teo" target="_blank">1 Timóteo</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segunda_Ep%C3%ADstola_a_Tim%C3%B3teo" target="_blank">2 Timóteo</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_a_Tito" target="_blank">Tito</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_a_Filemom" target="_blank">Filemom</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_aos_Hebreus" target="_blank">Hebreus</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_de_Tiago" target="_blank">Tiago</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Primeira_Ep%C3%ADstola_de_Pedro" target="_blank">1 Pedro</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segunda_Ep%C3%ADstola_de_Pedro" target="_blank">2 Pedro</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Primeira_Ep%C3%ADstola_de_Jo%C3%A3o" target="_blank">1 João</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Segunda_Ep%C3%ADstola_de_Jo%C3%A3o" target="_blank">2 João</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Terceira_Ep%C3%ADstola_de_Jo%C3%A3o" target="_blank">3 João</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Ep%C3%ADstola_de_Judas" target="_blank">Judas</a></li>
+
+<li><a href="https://pt.wikipedia.org/wiki/Apocalipse" target="_blank">Apocalipse</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </article>
+</main>
+
+<footer>
+    <p>Rua Dr. Américo Jazelino da Costa Dias, 193 – Fâzeres, Gondomar</p>
+    <p>© 2026 – Nosso Site</p>
+</footer>
+
+</body>
+</html>

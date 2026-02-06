@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva HTML5</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7fa;
+        }
+
+        /* ===== TOPO ===== */
+        header {
+            background: #b5c6c9;
+            color: #00363a;
+            text-align: center;
+            padding: 0;
+        }
+
+        /* IMAGEM EM TAMANHO TOTAL */
+        .logo {
+            width: 100vw;          /* largura total da tela */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        /* ===== MENU ===== */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            background: #c7dcdf;
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #00363a;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SEÇÃO CENTRAL ===== */
+        section {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 5px;
+        }
+
+        /* ===== CONTEÚDO ===== */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        article {
+            background: #c1d8db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        video,
+        main img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        /* ===== RODAPÉ ===== */
+        footer {
+            background: #b5c6c9;
+            color: #00363a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="img/SLOGAN.png" alt="Slogan do site" class="logo">
+
+    <nav class="menu">
+        <a href="./CCJ.html">Início</a>
+        <a href="./NOS.html">Sobre nós</a>
+        <a href="./estudar.html">Estudo bíblico</a>
+        
+    </nav>
+</header>
+
+<section>
+    <h2>Venha nos visitar.</h2>
+    <p>Dias de cultos:</p>
+    <p><strong>Sábados</strong> às 18:30 h.</p>
+    <p><strong>Domingos</strong> às 17:30 h.</p>
+</section>
+
+<main>
+    <article>
+        <h2>Watzzap 913481321</h2>
+        <p>
+            Tel: 913481321
+        </p>
+       <p>
+            comumcongregacao@gmail.com
+        </p>
+    </article>
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+
+    <img src="mela.svg" alt="Imagem de exemplo">
+</main>
+
+<footer>
+    <p>Rua Dr. Américo Jazelino da Costa Dias, 193 – Fâzeres, Gondomar</p>
+    <p>© 2026 – comumcongregacao@gmail.com</p>
+</footer>
+
+</body>
+</html>
