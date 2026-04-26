@@ -27,7 +27,7 @@
 
         /* IMAGEM EM TAMANHO TOTAL */
         .logo {
-            width: 100vw;          /* largura total da tela */
+            width: 100vw;
             max-width: 100%;
             height: auto;
             display: block;
@@ -89,6 +89,13 @@
             margin-top: 15px;
         }
 
+        /* ===== ÁUDIO (melhor visual) */
+        audio {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
         /* ===== RODAPÉ ===== */
         footer {
             background: #b5c6c9;
@@ -103,10 +110,10 @@
 <body>
 
 <header>
-    <img src="img/SLOGAN.png" alt="Slogan do site" class="logo">
+    <!-- corrigido: pasta correta -->
+    <img src="imagem/SLOGAN.png" alt="Slogan do site" class="logo">
 
     <nav class="menu">
-        
         <a href="./NOS.html">Sobre nós</a>
         <a href="./estudar.html">Estudo bíblico</a>
         <a href="contato.html">Contato</a>
@@ -127,17 +134,15 @@
         <p>Dar honra e glória de Deus Pai</p>
         <p>Conhecer as escrituras</p>
         <p>Visitas aos idosos</p>
-        <p>edificar vidas</p>
-        <p>fortalecer a fé </p>
-        
-                                       
-
-
+        <p>Edificar vidas</p>
+        <p>Fortalecer a fé</p>
     </article>
 
-   <audio controls>
-  <source src="cantada.mp3" type="audio/mp3">
-</audio>
+    <!-- ÁUDIO CORRIGIDO -->
+    <audio controls>
+        <source src="cantada.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
 
     <img src="mela.svg" alt="Imagem de exemplo">
 </main>
